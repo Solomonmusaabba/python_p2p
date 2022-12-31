@@ -20,6 +20,7 @@ class P2pChat(tk.Frame):
         self.pack(fill=tk.BOTH, expand=1)
         self.createWidgets()
         
+        
         if messagebox.askyesno("", "Are you hosting the chat room?"):
             self.chat = server.Server(DEFAULT_PORT)
             
